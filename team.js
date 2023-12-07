@@ -7,6 +7,7 @@ let students= [
 		favoriteFood: "hamburguer",
 		favoriteVideoGame: "COD",
 		favoriteFilm: "Harry Potter",
+		favoriteBook: "Palabras sueltas",
 		petName: "Coco & Beettle",
 	}
 
