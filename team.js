@@ -1,15 +1,15 @@
 let students = [
     {
-        name: " ",
-        surname: " ",
+        name: " EMILIO",
+        surname: "FERNANDEZ CARMONA ",
         age: 1,
-        city: " ",
-        hobby: " ",
-        favoriteFood: " ",
-        favoriteVideoGame: " ",
-        favoriteFilm: " ",
-        favoriteBook: " ",
-        petName: " "
+        city: "SEVILLA ",
+        hobby: " PROGRAMACION",
+        favoriteFood: "PASTA ",
+        favoriteVideoGame: " SEÑOR DE LOS ANILLOS",
+        favoriteFilm: "SEÑOR DE LOS ANILLOS ",
+        favoriteBook: " SEÑOR DE LOS ANILLOS",
+        petName: "NOA "
     },
     
 ]
