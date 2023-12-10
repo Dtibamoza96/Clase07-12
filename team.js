@@ -13,3 +13,18 @@ let students = [
     },
     
 ]
+
+function imprimirStudentsOrdenAlfabetico(arrStudents){
+    let aux =arrStudents;
+    aux.sort(function (a,b){
+        if(a.surname>b.surname){
+            return 1;
+        }
+        return -1;
+    });
+    console.log(aux);
+
+
+}
+
+imprimirStudentsOrdenAlfabetico(students)
