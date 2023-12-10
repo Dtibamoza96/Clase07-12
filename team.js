@@ -10,3 +10,14 @@ let students= [
     favoriteBook: "The Kingkiller Chronicles", 
     petName: "Alhue"},
 ]
+//Age Order 
+students.sort(function (a, b) {
+    if (a.age > b.age) {
+        return 1;
+        }
+        if (a.age < b.age) {
+        return -1;
+        }
+        return 0;
+    });
+    console.log(students);
