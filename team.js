@@ -24,7 +24,6 @@ let students= [
     favoriteFilm: "Hicth", 
     favoriteBook: "The Kingkiller Chronicles", 
     petName: "Alhue"
-  
     },
 
     {
@@ -52,13 +51,24 @@ function imprimirStudentsOrdenAlfabetico(arrStudents){
     console.log(aux);
 }
 
+//Age Order 
+students.sort(function (a, b) {
+    if (a.age > b.age) {
+        return 1;
+        }
+        if (a.age < b.age) {
+        return -1;
+        }
+        return 0;
+    });
+    console.log(students);
 
-  
-  	function findFavoriteGame (game) {
+
+function findFavoriteGame (game) {
 
 		for( let i=0 ; i < students.length ; i++){
 
-			if(students[i].favoriteVideoGame.toLowerCase() === "lol" || students[i].favoriteVideoGame.toLowerCase() === "league of legends")			{
+			if(students[i].favoriteVideoGame.toLowerCase() === "lol" || students[i].favoriteVideoGame.toLowerCase() === "league of legends") {
 				console.log(students[i].name);
 				return;
 			}
@@ -66,5 +76,5 @@ function imprimirStudentsOrdenAlfabetico(arrStudents){
 		
 		console.log(`No se encontro ningun estudiante que juege a ${game}`);
 	}
-   findFavoriteGame("League Of Legends");
-   
+findFavoriteGame("League Of Legends");
+
