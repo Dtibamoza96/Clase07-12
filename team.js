@@ -1,5 +1,20 @@
 let students= [
-    {name: "Maria Fernanda", 
+
+	{
+		name: "Daniel", 
+		surname: "Tibamoza", 
+		age: 27, 
+		city: "Vila-Real / Castellon",
+		hobby: "Puzzle",
+		favoriteFood: "hamburguer",
+		favoriteVideoGame: "LOL",
+		favoriteFilm: "Harry Potter",
+		favoriteBook: "Palabras sueltas",
+		petName: "Coco & Beettle",
+	},
+
+    {
+    name: "Maria Fernanda", 
     surname: "Gomez", 
     age: 30, 
     city: "Madrid", 
@@ -8,7 +23,9 @@ let students= [
     favoriteVideoGame: "WOW", 
     favoriteFilm: "Hicth", 
     favoriteBook: "The Kingkiller Chronicles", 
-    petName: "Alhue"},
+    petName: "Alhue"
+  
+    },
 
     {
         name: "Imad",
@@ -33,6 +50,18 @@ function imprimirStudentsOrdenAlfabetico(arrStudents){
         return -1;
     });
     console.log(aux);
+  
+  	function findFavoriteGame (game) {
 
+		for( let i=0 ; i < students.length ; i++){
 
-}
+			if(students[i].favoriteVideoGame.toLowerCase() === "lol" || students[i].favoriteVideoGame.toLowerCase() === "league of legends")			{
+				console.log(students[i].name);
+				return;
+			}
+		}
+		
+		console.log(`No se encontro ningun estudiante que juege a ${game}`);
+	}
+   findFavoriteGame("League Of Legends")
+  }
