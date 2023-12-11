@@ -1,16 +1,16 @@
 let students= [
 
 	{
-		name: "Daniel", 
-		surname: "Tibamoza", 
-		age: 27, 
-		city: "Vila-Real / Castellon",
-		hobby: "Puzzle",
-		favoriteFood: "hamburguer",
-		favoriteVideoGame: "LOL",
-		favoriteFilm: "Harry Potter",
-		favoriteBook: "Palabras sueltas",
-		petName: "Coco & Beettle",
+	name: "Daniel", 
+	surname: "Tibamoza", 
+	age: 27, 
+	city: "Vila-Real / Castellon",
+	hobby: "Puzzle",
+	favoriteFood: "hamburguer",
+	favoriteVideoGame: "LOL",
+	favoriteFilm: "Harry Potter",
+	favoriteBook: "Palabras sueltas",
+	petName: "Coco & Beettle",
 	},
 
     {
@@ -28,16 +28,16 @@ let students= [
     },
 
     {
-        name: "Imad",
-        surname: "El Founti Chaib",
-        age: 23,
-        city: "Málaga",
-        hobby: "Programador",
-        favoriteFood: "Pinchos",
-        favoriteVideoGame: "Marvel's Spiderman",
-        favoriteFilm: "Imitation Game",
-        favoriteBook: "El Principito",
-        petName: "Lina"
+    name: "Imad",
+    surname: "El Founti Chaib",
+    age: 23,
+    city: "Málaga",
+    hobby: "Programador",
+    favoriteFood: "Pinchos",
+    favoriteVideoGame: "Marvel's Spiderman",
+    favoriteFilm: "Imitation Game",
+    favoriteBook: "El Principito",
+    petName: "Lina"
     },
 ]
 
@@ -50,6 +50,9 @@ function imprimirStudentsOrdenAlfabetico(arrStudents){
         return -1;
     });
     console.log(aux);
+}
+
+
   
   	function findFavoriteGame (game) {
 
@@ -63,5 +66,5 @@ function imprimirStudentsOrdenAlfabetico(arrStudents){
 		
 		console.log(`No se encontro ningun estudiante que juege a ${game}`);
 	}
-   findFavoriteGame("League Of Legends")
-  }
+   findFavoriteGame("League Of Legends");
+   
