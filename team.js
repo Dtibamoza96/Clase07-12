@@ -1,17 +1,17 @@
 let students= [
 
-	{
-	name: "Daniel", 
-	surname: "Tibamoza", 
-	age: 27, 
-	city: "Vila-Real / Castellon",
-	hobby: "Puzzle",
-	favoriteFood: "hamburguer",
-	favoriteVideoGame: "LOL",
-	favoriteFilm: "Harry Potter",
-	favoriteBook: "Palabras sueltas",
-	petName: "Coco & Beettle",
-	},
+    {
+    name: "Daniel", 
+    surname: "Tibamoza", 
+    age: 27, 
+    city: "Vila-Real / Castellon",
+    hobby: "Puzzle",
+    favoriteFood: "hamburguer",
+    favoriteVideoGame: "LOL",
+    favoriteFilm: "Harry Potter",
+    favoriteBook: "Palabras sueltas",
+    petName: "Coco & Beettle",
+    },
 
     {
     name: "Maria Fernanda", 
