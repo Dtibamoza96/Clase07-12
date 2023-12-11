@@ -1,5 +1,5 @@
 let students= [
-	student = {
+	{
 		name: "Daniel", 
 		surname: "Tibamoza", 
 		age: 27, 
