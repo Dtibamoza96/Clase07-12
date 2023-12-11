@@ -26,5 +26,3 @@ function imprimirStudentsOrdenAlfabetico(arrStudents){
 
 
 }
-
-imprimirStudentsOrdenAlfabetico(students)
