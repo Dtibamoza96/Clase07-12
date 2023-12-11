@@ -15,27 +15,19 @@ let students= [
 
 ]
 
-function imprimirStudentsOrdenAlfabetico(arrStudents){
-    let aux =arrStudents;
-    aux.sort(function (a,b){
-        if(a.surname>b.surname){
-            return 1;
-        }
-        return -1;
-    });
-    console.log(aux);
-  
-  	function findFavoriteGame (game) {
+function findFavoriteGame (game) {
 
-		for( let i=0 ; i < students.length ; i++){
+	for( let i=0 ; i < students.length ; i++){
 
-			if(students[i].favoriteVideoGame.toLowerCase() === "lol" || students[i].favoriteVideoGame.toLowerCase() === "league of legends")			{
+		if(students[i].favoriteVideoGame.toLowerCase() === "lol" || students[i].favoriteVideoGame.toLowerCase() === "league of legends")			{
 				console.log(students[i].name);
-				return;
+			return;
 			}
-		}
-		
-		console.log(`No se encontro ningun estudiante que juege a ${game}`);
 	}
+		
+	console.log(`No se encontro ningun estudiante que juege a ${game}`);
+
+	}
+	
    findFavoriteGame("League Of Legends")
-  }
+
