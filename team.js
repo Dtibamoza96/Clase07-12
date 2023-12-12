@@ -53,6 +53,42 @@ let students = [
     
 ]
 
+function imprimirStudentsOrdenAlfabetico(arrStudents) {
+    let aux = arrStudents;
+    aux.sort(function (a, b) {
+        if (a.surname > b.surname) {
+            return 1;
+        }
+        return -1;
+
+        console.log(aux);
+    });
+};
+
+//Age Order 
+students.sort(function (a, b) {
+    if (a.age > b.age) {
+        return 1;
+        }
+        if (a.age < b.age) {
+        return -1;
+        }
+        return 0;
+});
+console.log(students);
+
+function findFavoriteGame(game) {
+
+    for (let i = 0; i < students.length; i++) {
+        if (students[i].favoriteVideoGame.toLowerCase() === "lol" || students[i].favoriteVideoGame.toLowerCase() === "league of legends") {
+            console.log(students[i].name);
+            return;
+        }
+        console.log(`No se encontro ningun estudiante que juege a ${game}`);
+    }
+}
+findFavoriteGame("League Of Legends");
+
 function printPetNameIfAny() {
     for (let i = 0; i > students.length; i++) {
         if (students[i].petName !== "") {
