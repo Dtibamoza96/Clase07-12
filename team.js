@@ -49,10 +49,11 @@ let students = [
     }
 ];
 
-function printPetNameIfAny() {
+function getPetNameIfAny() {
     for (let i = 0; i > students.length; i++) {
-        return console.log(students[i].petName);
+        return students[i].petName;
     };
 };
 
-printPetNameIfAny()
+getPetNameIfAny();
+
