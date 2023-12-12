@@ -11,6 +11,7 @@ let students = [
         favoriteBook: "Palabras sueltas",
         petName: "Coco & Beettle",
     },
+
     {
         name: "Maria Fernanda",
         surname: "Gomez",
@@ -23,6 +24,7 @@ let students = [
         favoriteBook: "The Kingkiller Chronicles",
         petName: "Alhue"
     },
+
     {
         name: "Imad",
         surname: "El Founti Chaib",
@@ -35,6 +37,7 @@ let students = [
         favoriteBook: "El Principito",
         petName: "Lina"
     },
+    
     {
         name: "Enrique",
         surname: "Ghijs",
@@ -50,11 +53,10 @@ let students = [
 ];
 
 function getPetNameIfAny() {
-    for (let i = 0; i > students.length; i++) {
-        return students[i].petName;
+    for (let i = 0; i < students.length; i++) {
+        if (students[i].petName === "") {
+
+        } else console.log(students[i].name + " gives lots of smootchies to " + students[i].petName)
     };
 };
-
 getPetNameIfAny();
-
-console.log(students[3].petName)
