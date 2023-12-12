@@ -52,3 +52,13 @@ let students = [
     },
     
 ]
+
+function printPetNameIfAny() {
+    for (let i = 0; i > students.length; i++) {
+        if (students[i].petName !== "") {
+            return console.log(students[i].name + " gives lots of kisses to " + students[i].petName);
+        } else return console.log("No pets found :(");
+    };
+};
+
+printPetNameIfAny()
