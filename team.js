@@ -1,8 +1,8 @@
 let students = [
     {
-        name: "Daniel", 
-        surname: "Tibamoza", 
-        age: 27, 
+        name: "Daniel",
+        surname: "Tibamoza",
+        age: 27,
         city: "Vila-Real / Castellon",
         hobby: "Puzzle",
         favoriteFood: "hamburguer",
@@ -10,22 +10,22 @@ let students = [
         favoriteFilm: "Harry Potter",
         favoriteBook: "Palabras sueltas",
         petName: "Coco & Beettle",
-        },
-    
-        {
-        name: "Maria Fernanda", 
-        surname: "Gomez", 
-        age: 30, 
-        city: "Madrid", 
-        hobby: "Paint", 
-        favoriteFood: "Sushi", 
-        favoriteVideoGame: "WOW", 
-        favoriteFilm: "Hicth", 
-        favoriteBook: "The Kingkiller Chronicles", 
+    },
+
+    {
+        name: "Maria Fernanda",
+        surname: "Gomez",
+        age: 30,
+        city: "Madrid",
+        hobby: "Paint",
+        favoriteFood: "Sushi",
+        favoriteVideoGame: "WOW",
+        favoriteFilm: "Hicth",
+        favoriteBook: "The Kingkiller Chronicles",
         petName: "Alhue"
-        },
-    
-        {
+    },
+
+    {
         name: "Imad",
         surname: "El Founti Chaib",
         age: 23,
@@ -51,7 +51,7 @@ let students = [
         petName: "Samsagáz"
     },
     
-]
+];
 
 function imprimirStudentsOrdenAlfabetico(arrStudents) {
     let aux = arrStudents;
@@ -90,11 +90,12 @@ function findFavoriteGame(game) {
 findFavoriteGame("League Of Legends");
 
 function printPetNameIfAny() {
-    for (let i = 0; i > students.length; i++) {
-        if (students[i].petName !== "") {
-            return console.log(students[i].name + " (" + students[i].petName + ")");
-        } else return console.log("No pets found :(");
+    console.log("In terms of pet ownership and smootchability:")
+    for (let i = 0; i < students.length; i++) {
+        if (students[i].petName === "") {
+            
+        } else console.log(students[i].name + " gives lots of smootches to " + students[i].petName);
     };
 };
 
-printPetNameIfAny()
+printPetNameIfAny();
