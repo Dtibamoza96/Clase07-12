@@ -57,3 +57,4 @@ function getPetNameIfAny() {
 
 getPetNameIfAny();
 
+console.log(students[3].petName)
